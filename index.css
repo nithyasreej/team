@@ -1,0 +1,72 @@
+.section-white {
+	background: #1b1a1a;
+	padding: 70px 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  background-color: #151414;
+}
+
+h2{
+  color: red;
+  transition: color 0.3s ease; /* Adding transition for smooth effect */
+}
+
+h2:hover {
+  color: blue; /* Change the color to your desired hover effect */
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  
+  display: block;
+  background-color: #f3f0f0;
+  box-shadow: 1px 1px 3px 2px #3f3a3a;
+  margin: 40px auto;
+  max-width: 600px;
+  max-height: 700px;
+  padding: 20px 40px 20px 40px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Change the scaling factor to your desired hover effect */
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
